@@ -5,7 +5,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 const ManageService = () => {
     const [services, setServices] = useState([]);
     useEffect(() => {
-        fetch('http://localhost:5000/services')
+        fetch('https://calm-refuge-54103.herokuapp.com/services')
             .then(res => res.json())
             .then(data => {
                 setServices(data);
@@ -13,7 +13,7 @@ const ManageService = () => {
             })
     }, [])
     const deleteService = (_id) => {
-        fetch(`http://localhost:5000/deleteService/${_id}`, {
+        fetch(`https://calm-refuge-54103.herokuapp.com/deleteService/${_id}`, {
             method: 'DELETE',
         })
             .then(res => res.json())

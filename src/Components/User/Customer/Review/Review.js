@@ -15,7 +15,7 @@ const Review = () => {
         }
         // console.log(loggedInUser);
         //Comment add hoye jabe...loggedIn User er
-        fetch(`http://localhost:5000/clientComments`, {
+        fetch(`https://calm-refuge-54103.herokuapp.com/clientComments`, {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(clientComment)

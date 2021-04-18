@@ -13,7 +13,7 @@ const AddService = () => {
         formData.append('description', evt.target.description.value)
         formData.append('price', evt.target.price.value)
         formData.append('file', evt.target.file.files[0])
-        fetch('http://localhost:5000/addServices', {
+        fetch('https://calm-refuge-54103.herokuapp.com/addServices', {
             method: 'POST',
             body: formData
         })

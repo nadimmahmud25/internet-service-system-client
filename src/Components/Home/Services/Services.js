@@ -7,7 +7,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 const Services = () => {
     const [services, setServices] = useState([]);
     useEffect(()=>{
-        fetch(`http://localhost:5000/services`)
+        fetch(`https://calm-refuge-54103.herokuapp.com/services`)
         .then(res => res.json())
         .then(data => {
             // console.log(data);

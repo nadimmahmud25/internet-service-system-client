@@ -11,7 +11,7 @@ const AdminServiceList = () => {
     const statuses = fakeService;
     const [newStatus, setNewStatus] = useState({});
     useEffect(() =>{
-        fetch(`http://localhost:5000/clients`)
+        fetch(`https://calm-refuge-54103.herokuapp.com/clients`)
         .then(res => res.json())
         .then(data => {
             // console.log(data);
@@ -25,9 +25,8 @@ const AdminServiceList = () => {
         // console.log(evt.target.id);
         const targetAction = evt.target.value;
         const targetStyle = statuses.find(status => status.name === targetAction); 
-        // console.log(targetStyle);
         const id = evt.target.id;
-        fetch(`http://localhost:5000/clients/${id}`,{
+        fetch(`https://calm-refuge-54103.herokuapp.com/clients/${id}`,{
             method: "PATCH",
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify({action: targetStyle.name,actionColor: targetStyle.style.color, actionBG: targetStyle.style.background})

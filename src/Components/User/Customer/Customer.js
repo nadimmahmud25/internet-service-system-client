@@ -45,16 +45,15 @@ const Customer = ({userServiceKey}) => {
         formData.append('email', evt.target.email.value)
         formData.append('projectTitle', evt.target.projectTitle.value)
         formData.append('projectDetails', evt.target.projectDetail.value)
-        formData.append('file', evt.target.file.files[0])
 
-        fetch('http://localhost:5000/addClientProject', {
+        fetch('https://calm-refuge-54103.herokuapp.com/addClientProject', {
             method: 'POST',
             body: formData
         })
         .then(response => response.json())
         .then(data => {
             // console.log(data);
-            data && alert('Welcome Your Project Is Uploaded Successfully!!!');
+            data && alert('Welcome Your order Is Uploaded Successfully!!!');
         })
         .catch(error => {
             console.error(error);

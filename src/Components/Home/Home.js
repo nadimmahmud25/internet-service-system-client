@@ -4,7 +4,6 @@ import HomeMain from './HomeMain/HomeMain';
 import ProjectForm from './ProjectForm/ProjectForm';
 import Services from './Services/Services';
 import Works from './Works/Works';
-import FamousCompany from './FamousCompany/FamousCompany';
 import WithUs from './WithUs/WithUs';
 import Support from './Support/Support';
 
@@ -22,8 +21,6 @@ const Home = () => {
             {/* Handle Project By Creating A Form */}
             <WithUs/>
              {/*People Connected With Us*/}
-            <FamousCompany/>
-            {/*Famous Company With Us*/}
             <Support/>
             {/*Support Team  */}
             

@@ -12,7 +12,7 @@ const MakeAdmin = () => {
         }
         const bool = window.confirm(`Are you sure to make ${admin.email} email user as an admin???`);
         if(bool){
-            fetch('http://localhost:5000/addAdmin', {
+            fetch('https://calm-refuge-54103.herokuapp.com/addAdmin', {
                 method: "POST",
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify(admin)

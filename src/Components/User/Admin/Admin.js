@@ -74,8 +74,6 @@ const Admin = ({setLoggedInUser,setUser}) => {
                         }
                     </div>
                     <div className="col-md-6 text-md-right text-sm-center text-xs-center text-danger">
-                        {/* <img src={user.img} style={{width: '70px',position: 'relative',bottom: '20px',borderRadius: '50px'}} alt=""/> */}
-                        {/* <h3>{user.title}</h3> */}
                         <h3>Admin</h3>
                     </div>
                 </div>

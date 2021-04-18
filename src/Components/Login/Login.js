@@ -48,7 +48,7 @@ const Login = () => {
         evt.preventDefault();
         // console.log(evt.target.email.value);
         const email = evt.target.email.value;
-        fetch(`http://localhost:5000/admins?email=${email}`)
+        fetch(`https://calm-refuge-54103.herokuapp.com/admins?email=${email}`)
         .then(res => res.json())
         .then(data => {
             // console.log(data.length > 0);
@@ -76,7 +76,7 @@ const Login = () => {
                admin 
                ? <div className="m-4 card w-50 p-4 mx-auto border-info">
                    <h5 className='font-weight-light my-3'>Sign in with email as an Admin</h5>
-                   <p className='text-secondary text-font-italic'><small>Helping Purpose: nadim@gmail.com</small></p>
+                   <p className='text-secondary text-font-italic'><small> Demo Purpose: nadim@gmail.com</small></p>
                    <form onSubmit={handleSubmit} className=''>
                        <div className="form-group w-100 form-inline justify-content-center">
                             <input ref={nameRef} type="text" className='form-control w-50 mr-3' name='email' placeholder="Enter Your Email" required/>

@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../images/logos/logo.png';
+import logo from '../../images/images/ispLG.png';
 import { useContext } from 'react';
 import { UserContext } from '../../App';
 import Customer from './Customer/Customer';
