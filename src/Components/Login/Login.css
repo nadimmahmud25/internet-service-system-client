@@ -1,0 +1,19 @@
+.gLogo-img{
+    height: 35px;
+    position: relative;
+    right: 5%;
+}
+.google-btn{
+    width: 50%;
+    border-radius: 50px;
+    color: rgb(43, 128, 226) !important;
+}
+.full-page{
+    margin-bottom: 0 !important;
+    min-height: 100vh;
+}
+@media (max-width: 650px){
+    .google-line{
+        display: none;
+    }
+}

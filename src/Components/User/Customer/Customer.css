@@ -1,0 +1,51 @@
+#upload-file{
+    display: none;
+}
+#upload-label{
+    background: #DEFFED;
+}
+.user-maintain{
+    position: relative;
+    bottom: 50px;
+    /* left: 50px; */
+}
+@media (max-width: 1391px){
+    #upload-text{
+        display: none;
+    }
+    @media(max-width: 470px) {
+        .image-upload{
+            display: none;
+        }
+    }
+}
+.card-deck:nth-child(2n) .style-text{
+    color: #f35626;
+    background-image: -webkit-linear-gradient(130deg, #cc5500, #ccbb00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 10s infinite linear;
+}
+.card-deck:nth-child(2n+1) .style-text{
+    color: #f14b09;
+    background-image: -webkit-linear-gradient(130deg, #cc0066, #18cc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: text-style 10s infinite linear;
+} 
+@keyframes hue {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(-360deg);
+    }
+}
+@keyframes text-style {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(-360deg);
+    }
+}
