@@ -53,7 +53,7 @@ const Login = () => {
                 history.push('/allServices');
             }
             else {
-                history.push('/sidebar')
+                history.push('/')
             }
         }).catch(function (error) {
             var errorCode = error.code;
