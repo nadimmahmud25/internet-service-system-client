@@ -1,0 +1,14 @@
+.single-item{
+  transition:  0.2s;
+  will-change: transform;
+  cursor: pointer;
+}
+.single-item:hover{
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .15);
+}
+ .service-card{
+  border:none
+} 
+
+
+  

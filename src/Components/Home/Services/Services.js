@@ -1,8 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { useEffect } from 'react';
-import ServiceDetails from './ServiceDetails';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import ServicesDetails from '../ServicesDetails/ServicesDetails';
 
 const Services = () => {
     const [services, setServices] = useState([]);
@@ -26,7 +26,7 @@ const Services = () => {
                         </div>
                 }
                 {
-                    services.map((service, idx) => <ServiceDetails key={idx} service={service}></ServiceDetails>)
+                    services.map((service, idx) => <ServicesDetails key={idx} service={service}></ServicesDetails>)
                 }
             </div>
         </section>

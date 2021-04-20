@@ -5,7 +5,6 @@ import work2 from '../../../images/package2.jpg';
 import work3 from '../../../images/package3.jpg';
 import work4 from '../../../images/package4.jpg';
 import work5 from '../../../images/package5.jpg';
-
 import './Works.css';
 
 const works = [
